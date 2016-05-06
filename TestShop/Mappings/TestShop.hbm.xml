@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" namespace="TestShop.Model" assembly="TestShop">
+
+  <class name="TestShop.Model.country" table="mydb.country"  xmlns="urn:nhibernate-mapping-2.2">
+    <id name="Id" column="country_id" type="long">
+      <generator class="identity"/>
+    </id>
+    <property name="country_name" column="country_name" type="String"/>
+   <property name="country_square" column="country_square" type="long"/>
+   <property name="country_population" column="country_population" type="long"/>
+    
+    
+ <class name="TestShop.Model.country" table="mydb.continents"  xmlns="urn:nhibernate-mapping-2.2">
+      <id name="Id" column="country_id" type="long">
+        <generator class="identity"/>
+      </id>
+      <property name="continents_name" column="continents_name" type="String"/>
+      <property name="continents_square" column="continents_square" type="long"/>
+     
+
+
+    </class>
+
+</hibernate-mapping>
